@@ -17,9 +17,9 @@ class _AddProductPageState extends State<AddProductPage> {
   final _nameController = TextEditingController();
   final _descriptionController = TextEditingController();
   final _priceController = TextEditingController();
-  File? _imageFile; // Для хранения выбранного изображения
+  File? _imageFile;
 
-  final ImagePicker _picker = ImagePicker(); // Инициализация ImagePicker
+  final ImagePicker _picker = ImagePicker(); 
 
   Future<void> _pickImage() async {
     final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
@@ -40,11 +40,11 @@ class _AddProductPageState extends State<AddProductPage> {
       }
 
       final product = Product(
-        id: DateTime.now().millisecondsSinceEpoch, // Генерация уникального id
+        id: DateTime.now().millisecondsSinceEpoch, 
         name: _nameController.text,
         description: _descriptionController.text,
         price: double.parse(_priceController.text),
-        image: _imageFile!.path, // Путь к изображению
+        image: _imageFile!.path,
         reviews: [],
       );
       widget.onAdd(product);
@@ -60,7 +60,7 @@ class _AddProductPageState extends State<AddProductPage> {
         padding: EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
-          child: SingleChildScrollView( // Чтобы форма была скроллируемой
+          child: SingleChildScrollView(
             child: Column(
               children: [
                 TextFormField(
@@ -95,7 +95,7 @@ class _AddProductPageState extends State<AddProductPage> {
                   },
                 ),
                 SizedBox(height: 16),
-                _imageFile != null // Предпросмотр изображения, если выбрано
+                _imageFile != null 
                     ? Image.file(
                   _imageFile!,
                   height: 200,
@@ -103,7 +103,7 @@ class _AddProductPageState extends State<AddProductPage> {
                     : Text('No image selected'),
                 SizedBox(height: 16),
                 ElevatedButton(
-                  onPressed: _pickImage, // Открытие галереи
+                  onPressed: _pickImage, 
                   child: Text('Select Image'),
                 ),
                 SizedBox(height: 20),
