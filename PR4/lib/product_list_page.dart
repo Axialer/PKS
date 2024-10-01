@@ -61,8 +61,8 @@ class _ProductListPageState extends State<ProductListPage> {
           : GridView.builder(
         padding: EdgeInsets.all(8.0),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2, // Две плашки в строке
-          childAspectRatio: 0.8, // Соотношение сторон плашек
+          crossAxisCount: 2, 
+          childAspectRatio: 0.8, 
           crossAxisSpacing: 8.0,
           mainAxisSpacing: 8.0,
         ),
@@ -82,10 +82,10 @@ class _ProductListPageState extends State<ProductListPage> {
               );
             },
             child: Card(
-              color: Colors.grey[200], // Светло-серый фон плашки
-              elevation: 4.0, // Тень плашки
+              color: Colors.grey[200], 
+              elevation: 4.0, 
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10.0), // Скругленные углы
+                borderRadius: BorderRadius.circular(10.0),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -100,7 +100,7 @@ class _ProductListPageState extends State<ProductListPage> {
                         File(product.image),
                         fit: BoxFit.cover,
                       )
-                          : Icon(Icons.image, size: 60), // Заглушка, если нет изображения
+                          : Icon(Icons.image, size: 60), 
                     ),
                   ),
                   Padding(
@@ -123,7 +123,7 @@ class _ProductListPageState extends State<ProductListPage> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors.green[700], // Тёмно-зелёный цвет для цены
+                          color: Colors.green[700], 
                         ),
                       ),
                     ),
