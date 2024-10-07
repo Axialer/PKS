@@ -2,4 +2,5 @@
 - Добавлена возможность добавить товар в избранное
 - Добавлена навигационная панель
 - Добавлена страница пользователя (пример)
-![PKS_5](https://github.com/Axialer/PKS/blob/main/PR5/video.mp4)
+
+https://github.com/Axialer/PKS/blob/main/PR5/video.mp4
