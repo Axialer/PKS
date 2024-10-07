@@ -1,2 +1,5 @@
-# test_app_1
-![PKS_1](https://github.com/user-attachments/assets/012668d4-2b6f-45b7-a3ca-85c352cd915f)
+# PR_5
+- Добавлена возможность добавить товар в избранное
+- Добавлена навигационная панель
+- Добавлена страница пользователя (пример)
+![PKS_5](https://github.com/Axialer/PKS/blob/main/PR5/video.mp4)
