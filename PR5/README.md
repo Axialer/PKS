@@ -3,4 +3,4 @@
 - Добавлена навигационная панель
 - Добавлена страница пользователя (пример)
 
-[!](https://github.com/Axialer/PKS/blob/main/PR5/gif.gif)
+![PKS_5](https://github.com/Axialer/PKS/blob/main/PR5/gif.gif)
